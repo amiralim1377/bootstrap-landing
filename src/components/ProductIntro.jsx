@@ -7,7 +7,7 @@ function ProductIntro() {
       style={{ marginTop: "2rem", height: "500px" }}
     >
       <Image
-        src="/images/ProductIntro/1.jpg"
+        src="images/ProductIntro/1.jpg"
         alt="تصویر محصول"
         fill
         className="object-fit-cover"

@@ -7,7 +7,7 @@ function GolestanPistachio() {
       style={{ marginTop: "2rem", height: "500px" }}
     >
       <Image
-        src="/images/ProductIntro/3.jpg"
+        src="images/ProductIntro/3.jpg"
         alt="تصویر محصول"
         fill
         className="object-fit-cover"

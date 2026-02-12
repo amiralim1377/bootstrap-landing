@@ -10,7 +10,7 @@ export default function MobileHeader() {
         ☰
       </button>
 
-      <Image src={"/logo-fr (2).svg"} width={100} height={100} alt="logo" />
+      <Image src={"logo-fr (2).svg"} width={100} height={100} alt="logo" />
 
       <button className="text-white fs-4 bg-transparent border-0 p-0">
         🛒

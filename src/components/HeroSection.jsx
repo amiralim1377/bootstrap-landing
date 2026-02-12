@@ -33,7 +33,7 @@ const HeroSection = () => {
         </div>
         <div className="text-center">
           <Image
-            src={"/hero-section-pic.png"}
+            src={"hero-section-pic.png"}
             width={350}
             height={400}
             alt="hero-section"
