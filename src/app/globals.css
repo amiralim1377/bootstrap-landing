@@ -1,1 +1,76 @@
-@import "tailwindcss";
+:root {
+  --golestan-red-600: #dc2626;
+  --golestan-gray-500: #6b7280;
+  --golestan-gray-600: #4b5563;
+  --golestan-gray-300: #d1d5db;
+  --golestan-gray-400: #9ca3af;
+  --golestan-dark-bg: #282828;
+  --golestan-footer-bg: #262626;
+  --golestan-magazine-bg: #cde4b0;
+  --golestan-hero-bg: #e9e9e9;
+}
+
+body {
+  margin: 0;
+}
+
+.hero-button {
+  background-color: #393636;
+  border: 1px solid var(--golestan-gray-400);
+  border-radius: 0.75rem;
+  color: var(--golestan-gray-400);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  display: inline-block;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.hero-button:hover {
+  background-color: var(--golestan-red-600);
+  border-color: #000000;
+  color: #ffffff;
+}
+
+.three-line-clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.footer-divider {
+  width: 9rem;
+  height: 1px;
+  background-color: var(--golestan-gray-300);
+}
+
+.footer-links li {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.footer-links li:hover {
+  color: var(--golestan-red-600);
+}
+
+.header-nav {
+  white-space: nowrap;
+  color: #afb2b4;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+.header-nav li {
+  padding-inline: 1rem;
+}
+
+.header-nav li + li {
+  border-right: 1px solid var(--golestan-gray-300);
+}
+
+.loose-line-height {
+  line-height: 2;
+}

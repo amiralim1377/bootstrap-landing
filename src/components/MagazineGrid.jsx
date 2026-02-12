@@ -23,30 +23,56 @@ export default function MagazineGrid() {
   ];
 
   return (
-    <section className="mx-auto max-w-6xl px-4 py-12">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section className="mx-auto py-5 px-3" style={{ maxWidth: "72rem" }}>
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
         {magazine.map((item, index) => (
           <div
             key={index}
-            className="bg-white shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+            className="bg-white shadow-sm overflow-hidden p-4"
+            style={{
+              transition: "box-shadow 0.3s ease",
+            }}
           >
-            <div className="relative w-full h-72">
+            <div
+              className="position-relative w-100"
+              style={{ height: "18rem" }}
+            >
               <Image
                 src={item.image}
                 alt={item.title}
                 fill
-                className="object-cover"
+                className="object-fit-cover"
               />
             </div>
 
-            <div className="p-5 flex flex-col gap-3">
-              <h4 className="text-lg font-semibold text-red-600">
+            <div className="p-4 d-flex flex-column gap-2">
+              <h4
+                className="fw-semibold"
+                style={{
+                  fontSize: "1.125rem",
+                  color: "var(--golestan-red-600)",
+                }}
+              >
                 {item.title}
               </h4>
-              <p className="text-sm text-gray-600 line-clamp-3">
+              <p
+                className="small three-line-clamp"
+                style={{ color: "var(--golestan-gray-600)" }}
+              >
                 {item.description}
               </p>
-              <button className="mt-2 w-fit border text-gray-400 p-4 border-gray-400 text-sm font-medium text-site-primary hover:text-site-primary/70 transition-colors duration-200">
+              <button
+                className="mt-2 border-0 bg-transparent p-0"
+                style={{
+                  padding: "1rem",
+                  width: "fit-content",
+                  border: `1px solid var(--golestan-gray-400)`,
+                  fontSize: "0.875rem",
+                  fontWeight: 500,
+                  color: "var(--golestan-gray-400)",
+                  transition: "color 0.2s ease",
+                }}
+              >
                 ادامه مطلب →
               </button>
             </div>

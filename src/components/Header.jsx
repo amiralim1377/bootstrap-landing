@@ -14,20 +14,35 @@ const Header = () => {
   ];
 
   return (
-    <header className=" hidden  sticky z-40 top-0 w-full  md:flex items-center justify-center h-24 bg-[#282828]">
-      <div className="absolute right-60 top-12">
+    <header
+      className="d-none d-md-flex sticky-top w-100 align-items-center justify-content-center"
+      style={{ backgroundColor: "var(--golestan-dark-bg)", height: "6rem" }}
+    >
+      <div
+        className="position-absolute"
+        style={{ right: "15rem", top: "3rem" }}
+      >
         <Image
-          className="object-cover"
           src={"/logo-fr.png"}
           width={150}
-          height={150}
+          height={90}
+          className="object-fit-cover"
           alt="logo"
         />
       </div>
-      <ul className="flex gap-3    text-[#AFB2B4] text-base/[20px]   text-nowrap divide-x divide-gray-300 ">
+
+      <ul className="d-flex gap-3 header-nav list-unstyled mb-0 ">
         {navLinks.map((nav, i) => (
-          <li key={i} className="px-4">
-            <Link href={nav.href}>{nav.name}</Link>
+          <li key={i}>
+            <Link
+              href={nav.href}
+              className="text-decoration-none "
+              style={{
+                color: "var(--golestan-gray-300)",
+              }}
+            >
+              {nav.name}
+            </Link>
           </li>
         ))}
       </ul>

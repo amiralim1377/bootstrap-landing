@@ -35,43 +35,48 @@ const content = [
 
 export default function FooterContent() {
   return (
-    <div className="max-w-6xl mx-auto w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 py-10 px-4">
-      {content.map((item, index) => (
-        <div
-          key={index}
-          className="flex flex-col items-center text-center gap-4"
-        >
-          {/* تصویر */}
-          <Image
-            src={item.image}
-            alt={item.title}
-            width={90}
-            height={90}
-            className="object-contain"
-          />
+    <div className="mx-auto w-100 py-4 px-3" style={{ maxWidth: "72rem" }}>
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+        {content.map((item, index) => (
+          <div
+            key={index}
+            className="d-flex flex-column align-items-center text-center gap-3"
+          >
+            <Image
+              src={item.image}
+              alt={item.title}
+              width={90}
+              height={90}
+              className="object-fit-contain"
+            />
 
-          {/* عنوان با خطوط بالا و پایین */}
-          <div className="w-full flex flex-col items-center gap-2">
-            <div className="w-36 h-px bg-gray-300"></div>
-            <h4 className="text-lg font-semibold text-gray-300">
-              {item.title}
-            </h4>
-            <div className="w-36 h-px bg-gray-300"></div>
-          </div>
-
-          {/* لینک‌ها */}
-          <ul className="flex flex-col gap-2 text-sm text-gray-300">
-            {item.link.map((text, i) => (
-              <li
-                key={i}
-                className="hover:text-red-600 transition-colors duration-200 cursor-pointer"
+            <div className="w-100 d-flex flex-column align-items-center gap-2">
+              <div className="footer-divider" />
+              <h4
+                className="fw-semibold"
+                style={{
+                  fontSize: "1.125rem",
+                  color: "var(--golestan-gray-300)",
+                }}
               >
-                {text}
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
+                {item.title}
+              </h4>
+              <div className="footer-divider" />
+            </div>
+
+            <ul
+              className="d-flex flex-column justify-content-center  gap-2    footer-links list-unstyled mb-0"
+              style={{ color: "var(--golestan-gray-300)" }}
+            >
+              {item.link.map((text, i) => (
+                <li className="" key={i}>
+                  {text}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

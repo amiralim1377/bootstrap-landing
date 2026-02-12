@@ -2,17 +2,31 @@ import Image from "next/image";
 
 function GolestanPistachio() {
   return (
-    <div className="w-full mt-8 mx-auto h-[500px] relative">
+    <div
+      className="w-100 position-relative mx-auto"
+      style={{ marginTop: "2rem", height: "500px" }}
+    >
       <Image
         src="/images/ProductIntro/3.jpg"
         alt="تصویر محصول"
         fill
-        className="object-cover"
+        className="object-fit-cover"
       />
 
-      <div className="absolute bottom-0 right-1/4 bg-red-600 text-white px-6 py-4 text-center w-[250px]">
-        <p className="text-lg font-bold mb-2">پسته گلستان</p>
-        <p className="text-sm">معرفی محصول</p>
+      <div
+        className="position-absolute text-center text-white"
+        style={{
+          bottom: 0,
+          right: "25%",
+          backgroundColor: "var(--golestan-red-600)",
+          padding: "1rem 1.5rem",
+          width: "250px",
+        }}
+      >
+        <p className="fw-bold mb-2" style={{ fontSize: "1.125rem" }}>
+          پسته گلستان
+        </p>
+        <p style={{ fontSize: "0.875rem" }}>معرفی محصول</p>
       </div>
     </div>
   );

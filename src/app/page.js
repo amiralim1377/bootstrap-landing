@@ -11,7 +11,7 @@ import ProductIntro from "@/components/ProductIntro";
 
 export default function Home() {
   return (
-    <div className="">
+    <div>
       <HeroSection />
       <GolestanBrandIntro />
       <CompanyStats />

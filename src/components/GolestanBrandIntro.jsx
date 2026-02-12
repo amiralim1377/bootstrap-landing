@@ -1,8 +1,16 @@
 function GolestanBrandIntro() {
   return (
-    <div className="max-w-5xl mx-auto p-6 text-right leading-loose ">
-      <h2 className="text-2xl font-bold mb-4 text-red-600">معرفی گلستان</h2>
-      <p className="mb-4 text-gray-500">
+    <div
+      className="mx-auto p-4 text-end loose-line-height"
+      style={{ maxWidth: "64rem" }}
+    >
+      <h2
+        className="fw-bold mb-3"
+        style={{ fontSize: "1.5rem", color: "var(--golestan-red-600)" }}
+      >
+        معرفی گلستان
+      </h2>
+      <p className="mb-3" style={{ color: "var(--golestan-gray-500)" }}>
         آنچه که امروز با نام مجموعه گلستان می‌شناسیم در سال ۱۳۲۹ بنیان نهاده شد.
         زمانی که شرکت گلستان فعالیت خود را با بسته‌بندی و توزیع چای پاکتی آغاز
         کرد. با گذر زمان و رشد اقتصاد کشور، نهال «گلستان» به تدریج تقویت شد و
@@ -11,16 +19,19 @@ function GolestanBrandIntro() {
         به کمک تجربه‌های اندوخته شده در این سال‌ها کالاهایی قابل اعتماد و با
         کیفیت تولید نماید.
       </p>
-      <p className="mb-4 text-gray-500">
+      <p className="mb-3" style={{ color: "var(--golestan-gray-500)" }}>
         هدفمندی و برنامه‌ریزی موثر، ایمان و عزم راسخ برای دستیابی به اهداف تعیین
         شده، به‌کارگیری همکاران مجرب و دلسوز، استفاده از روش‌های نوین بازاریابی
         و مشتری‌محوری از جمله عوامل مهم در استراتژی شرکت گلستان است.
       </p>
 
-      <h3 className="text-xl font-semibold  text-red-600 mb-2">
+      <h3
+        className="fw-semibold mb-2"
+        style={{ fontSize: "1.25rem", color: "var(--golestan-red-600)" }}
+      >
         محصولات گلستان
       </h3>
-      <p className="text-gray-500">
+      <p style={{ color: "var(--golestan-gray-500)" }}>
         نام تجاری گلستان قدمتی به اندازه عمر شرکت گلستان دارد. گلستان ممتازترین
         محصولات خود را با این نام تجاری عرضه می‌کند. مصرف‌کنندگان محصولات گلستان
         همواره از این نام تجاری خاطره محصولاتی ممتاز و منحصر‌به‌فرد دارند و با

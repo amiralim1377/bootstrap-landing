@@ -2,7 +2,10 @@ import FooterContent from "./FooterContent";
 
 function Footer() {
   return (
-    <div className="bg-[#262626] w-full">
+    <div
+      className="w-100"
+      style={{ backgroundColor: "var(--golestan-footer-bg)" }}
+    >
       <FooterContent />
     </div>
   );
