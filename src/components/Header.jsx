@@ -23,7 +23,7 @@ const Header = () => {
         style={{ right: "15rem", top: "3rem" }}
       >
         <Image
-          src={"/logo-fr.png"}
+          src={"logo-fr.png"}
           width={150}
           height={90}
           className="object-fit-cover"
