@@ -1,9 +1,9 @@
 function CompanyStats() {
   const stats = [
-    { image: "/images/CompanyStats/4.png", text: "سرمایه انسانی" },
-    { image: "/images/CompanyStats/3.png", text: "مراکز فروش" },
-    { image: "/images/CompanyStats/2.png", text: "محصولات گلستان" },
-    { image: "/images/CompanyStats/1.png", text: "مشتریان گلستان" },
+    { image: "images/CompanyStats/4.png", text: "سرمایه انسانی" },
+    { image: "images/CompanyStats/3.png", text: "مراکز فروش" },
+    { image: "images/CompanyStats/2.png", text: "محصولات گلستان" },
+    { image: "images/CompanyStats/1.png", text: "مشتریان گلستان" },
   ];
 
   return (
