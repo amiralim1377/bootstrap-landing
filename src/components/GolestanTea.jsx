@@ -7,7 +7,7 @@ function GolestanTea() {
       style={{ marginTop: "2rem", height: "500px" }}
     >
       <Image
-        src="/images/ProductIntro/2.jpg"
+        src="images/ProductIntro/2.jpg"
         alt="تصویر محصول"
         fill
         className="object-fit-cover"
