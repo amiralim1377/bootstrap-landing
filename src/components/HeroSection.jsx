@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import image from "../../public/hero-section-pic.png";
 
 const HeroSection = () => {
   return (
@@ -32,12 +33,7 @@ const HeroSection = () => {
           </Link>
         </div>
         <div className="text-center">
-          <Image
-            src={"hero-section-pic.png"}
-            width={350}
-            height={400}
-            alt="hero-section"
-          />
+          <Image src={image} width={350} height={400} alt="hero-section" />
         </div>
       </section>
     </div>

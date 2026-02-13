@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import image from "../../public/logo-fr.png";
 
 const Header = () => {
   const navLinks = [
@@ -23,7 +24,7 @@ const Header = () => {
         style={{ right: "15rem", top: "3rem" }}
       >
         <Image
-          src={"logo-fr.png"}
+          src={image}
           width={150}
           height={90}
           className="object-fit-cover"

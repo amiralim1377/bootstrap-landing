@@ -3,19 +3,19 @@ import Image from "next/image";
 export default function MagazineGrid() {
   const magazine = [
     {
-      image: "images/Magazine/1.jpg",
+      image: "/images/Magazine/1.jpg",
       title: "چیلاکیله",
       description:
         "احتمالا نام چیلا کیله را نشنیده باشید ولی اگر یکبار این غذای فوق‌العاده خوشمزه را تهیه کنید و نوش جان کنید جزئی جدانشدنی از فهرست",
     },
     {
-      image: "images/Magazine/2.jpg",
+      image: "/images/Magazine/2.jpg",
       title: "سوپ مکزیکی",
       description:
         "گوشت بوقلمون را در یک ماهیتابه بزرگ ریخته، آب روی آن بریزید تا روی آن را بپوشاند و به مدت نیم ساعت آن را بپزید. گوشت را از مایع آن بیرون آورده…",
     },
     {
-      image: "images/Magazine/3.jpg",
+      image: "/images/Magazine/3.jpg",
       title: "ماکارونی با سبزیجات",
       description:
         "ابتدا ماکارونی‌ها را در ظرفی‌ به‌ همراه‌ آب‌، روغن‌ مایع‌ و نمک‌ می‌ریزیم‌ تا کمی‌ بپزد. در این‌ حین‌ پیازها را خرد کرده‌ و روی‌ روغن‌ تفت‌ می‌دهیم‌ تا طلایی‌ شود…",

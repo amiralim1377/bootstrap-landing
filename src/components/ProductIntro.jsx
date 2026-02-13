@@ -1,4 +1,5 @@
 import Image from "next/image";
+import image from "../../public/images/ProductIntro/1.jpg";
 
 function ProductIntro() {
   return (
@@ -6,12 +7,7 @@ function ProductIntro() {
       className="w-100 position-relative mx-auto"
       style={{ marginTop: "2rem", height: "500px" }}
     >
-      <Image
-        src="images/ProductIntro/1.jpg"
-        alt="تصویر محصول"
-        fill
-        className="object-fit-cover"
-      />
+      <Image src={image} alt="تصویر محصول" fill className="object-fit-cover" />
 
       <div
         className="position-absolute text-center text-white"
